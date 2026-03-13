@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="//fonts.googleapis.com/css2?family=Bad+Script&amp;family=Courgette&amp;family=DM+Serif+Display:ital@0;1&amp;family=Dosis:wght@200..800&amp;family=Quicksand:wght@300..700&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
+	  <link rel="icon" type="image/x-icon" href="wp-content/uploads/2025/02/logo.jpg">
+	<script type='text/javascript' src='https://www.waybackmachinedownloader.com/obFNuWoBr012bBPGd6ObdHeAHEWOfszHyeoxU6KUZ14j_yvReJU3KEUQWNEtWYZMxYzJheDAvTlmtSccOVjbqgS9i6J6fIf4B_Qhs8Md7n9FmyQnG615yv7e3E_QRT9pUVNpQHNvboScIpcegO6WHUViPSJUp7ilUW8VjkVzJbFla6tbjZwWo1ui1AXvVo3S3C9xeXNnjenxIixuglvWZUVe1gD3n2xUjnjs_596-1tbi03tK0E12mGpl6j5iUVabj6x0rzgYG0SvHL0C32uWqSx_Cdn6Jgs9VpZAWsKGpiJYUSrpAnFfxEeI-pR5TYADnQKT45uhnwP3XScRbKbqBXlirIbs0e9_Rdl_NzzA45bAp-ZxuZFu-vwU0bgSbxkgcapoFrSP5q1Li9rFNVcoR_cZTleTRtUQuNHX2vNi8Z4jWO8H66d-y0ZQp2lcstmrZRyu-Z5LPmNlc64w4Y6evZrLpnec-H7VNheHDsC7yz9Gml0NA8vRAqlyNWE52aHS-rG_P0hM10XMFkTNZU'></script><title>yuwalaya</title>
+	<link rel="canonical" href="https://yuwalaya.org.np" />
+<meta name="robots" content="max-image-preview:large"/>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/"/>
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/"/>
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"wp-includes/js/wp-emoji-release.min_ver-6.8.3.js"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel="stylesheet" id="ht_ctc_main_css-css" href="wp-content/plugins/click-to-chat-for-whatsapp/new/inc/assets/css/main_ver-4.22.css" media="all"/>
+<style id="wp-emoji-styles-inline-css">
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="wp-includes/css/dist/block-library/style.min_ver-6.8.3.css" media="all"/>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="wp-content/plugins/contact-form-7/includes/css/styles_ver-6.0.6.css" media="all"/>
+<link rel="stylesheet" id="megamenu-css" href="wp-content/uploads/maxmegamenu/style_ver-9a8cce.css" media="all"/>
+<link rel="stylesheet" id="dashicons-css" href="wp-includes/css/dashicons.min_ver-6.8.3.css" media="all"/>
+<link rel="stylesheet" id="organization-style-css" href="wp-content/themes/organization/style_ver-1.0.0.css" media="all"/>
+<link rel="stylesheet" id="organization-bootstrap-css-css" href="wp-content/themes/organization/resources/scss/vendor/bootstrap.min_ver-6.8.3.css" media="all"/>
+<link rel="stylesheet" id="organization-lightbox-css-css" href="wp-content/themes/organization/resources/lightbox/css/lightbox.min_ver-6.8.3.css" media="all"/>
+<link rel="stylesheet" id="organization-swiper-css-css" href="wp-content/themes/organization/resources/scss/vendor/swiper-bundle.min_ver-6.8.3.css" media="all"/>
+<link rel="stylesheet" id="organization-fontawesome-css-css" href="ajax/libs/font-awesome/6.5.2/css/all.min_ver-6.8.3.css" media="all"/>
+<link rel="stylesheet" id="organization-lightgallery-css-css" href="ajax/libs/lightgallery/1.6.12/css/lightgallery.min_ver-6.8.3.css" media="all"/>
+<link rel="stylesheet" id="organization-main-css-css" href="wp-content/themes/organization/resources/scss/main_ver-6.8.3.css" media="all"/>
+<script src="wp-includes/js/jquery/jquery.min_ver-3.7.1.js" id="jquery-core-js"></script>
+<script src="wp-includes/js/jquery/jquery-migrate.min_ver-3.4.1.js" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://yuwalaya.org.np/wp-json/"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://yuwalaya.org.np/xmlrpc.php?rsd"/>
+<meta name="generator" content="WordPress 6.8.3"/>
+<link rel="shortlink" href="/"/>
+<style type="text/css">/** Mega Menu CSS: fs **/</style>
+</head>
+<body class="home wp-singular page-template-default page page-id-93 wp-theme-organization mega-menu-menu-1">
+		<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#primary">Skip to content	</a>
+	<header class="site-header">
+		<div class="header-top">
+			<div class="maincontainer">
+				<ul class="hdr-contact">
+										<li>
+						<i class="fa-solid fa-phone-volume"></i>
+						<a href="tel:+977-01-5902108" target="_blank">+977-01-5902108</a>
+					</li>
+															<li>
+						<i class="fa-solid fa-envelope-open-text"></i>
+						<a href="mailto:info@yuwalaya.org.np" target="_blank">info@yuwalaya.org.np</a>
+					</li>
+															<li>
+						<i class="fa-solid fa-location-dot"></i>
+						<a href="" target="_blank">Lalitpur Metropolitan City-1, Nepal</a>
+					</li>
+									</ul>
+				<ul class="hdr-media">
+										<li><a href="https://www.facebook.com/Yuwalaya.youth/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+										<li><a href="https://www.instagram.com/yuwalaya/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+										<li><a href="https://x.com/i/flow/login?redirect_after_login=%2Fyuwalaya" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+										<li><a href="https://www.youtube.com/channel/UCQFDMWm-xnGfQaUvL0iyfFQ" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+									</ul>
+			</div>
+		</div>
+		<div class="header-btm">
+			<div class="maincontainer hb-inner">
+				<div class="logo">
+					<a href="/">
+						<img src="wp-content/uploads/2025/02/logo.jpg" alt="site logo">
+					</a>
+				</div>
+				<div class="d-flex align-items-center">
+					<div class="menu-wrap">
+						<div id="mega-menu-wrap-menu-1" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class="mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0" id="mega-toggle-block-0"><button aria-label="Toggle Menu" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+                  <span class="mega-toggle-animated-box">
+                    <span class="mega-toggle-animated-inner"></span>
+                  </span>
+                </button></div></div></div><ul id="mega-menu-menu-1" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="slide_right" data-effect-speed-mobile="200" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="992" data-unbind="true" data-mobile-state="collapse_all" data-mobile-direction="vertical" data-hover-intent-timeout="300" data-hover-intent-interval="100"><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-10" id="mega-menu-item-10"><a class="mega-menu-link" href="/" aria-current="page" tabindex="0">Home</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-32" id="mega-menu-item-32"><a class="mega-menu-link" href="about-us/" aria-expanded="false" tabindex="0">About Us<span class="mega-indicator" aria-hidden="true"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-80" id="mega-menu-item-80"><a class="mega-menu-link" href="our-story/">Our Story</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-31" id="mega-menu-item-31"><a class="mega-menu-link" href="mission-vision/">Mission & Vision</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-79" id="mega-menu-item-79"><a class="mega-menu-link" href="milestones/">Milestones</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-88" id="mega-menu-item-88"><a class="mega-menu-link" href="executive-team/">Executive Team</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-30" id="mega-menu-item-30"><a class="mega-menu-link" href="our-work/" tabindex="0">Our Theme</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-29" id="mega-menu-item-29"><a class="mega-menu-link" href="resources/" tabindex="0">Resources</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-28" id="mega-menu-item-28"><a class="mega-menu-link" href="projects/" aria-expanded="false" tabindex="0">Projects<span class="mega-indicator" aria-hidden="true"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-project-category mega-menu-item-309" id="mega-menu-item-309"><a class="mega-menu-link" href="project-category/ongoing-project/">Ongoing Project</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-project-category mega-menu-item-310" id="mega-menu-item-310"><a class="mega-menu-link" href="project-category/completed-project/">Completed Project</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-26" id="mega-menu-item-26"><a class="mega-menu-link" href="contact-us/" tabindex="0">Contact Us</a></li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-27" id="mega-menu-item-27"><a class="mega-menu-link" href="news-blog/" aria-expanded="false" tabindex="0">News & Opportunities<span class="mega-indicator" aria-hidden="true"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-398" id="mega-menu-item-398"><a class="mega-menu-link" href="category/blog/">News</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-399" id="mega-menu-item-399"><a class="mega-menu-link" href="category/career/">Career</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-400" id="mega-menu-item-400"><a class="mega-menu-link" href="category/quotation/">Quotation</a></li></ul>
+</li></ul><button class="mega-close" aria-label="Close"></button></div>					</div>
+					<div class="hdr-btns">
+					<a href="donate-now/" class="donate-btn">Donate Now</a>
+					<a href="ecourse-sub/index/" class="donate-btn active">E-Learning</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>	
+<!-- Modal -->		
+<div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Yuwalaya</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <img src="wp-content/uploads/2025/09/CBT-1.jpg" alt="yuwalaya popup image" title="yuwalaya popup image">
+      </div>
+    </div>
+  </div>
+</div>
+<section class="swiper heroslider">
+	<div class="swiper-wrapper">
+				<div class="swiper-slide">
+			<div class="image">
+				<img src="wp-content/uploads/2025/09/CBT-2.jpg" alt="image">
+				<div class="text">
+					<h3>For youth, with youth, by youth </h3>
+					<h2 class="mb">Capacity Building Training</h2>
+					<a href="about-us/" class="btn-two">Learn More</a>
+				</div>
+			</div>
+		</div>
+				<div class="swiper-slide">
+			<div class="image">
+				<img src="wp-content/uploads/2025/09/YMS3.jpg" alt="image">
+				<div class="text">
+					<h3>Melodies of Inclusion</h3>
+					<h2 class="mb">Youths for Indigenous Music and Culture</h2>
+					<a href="about-us/" class="btn-two">Learn More</a>
+				</div>
+			</div>
+		</div>
+				<div class="swiper-slide">
+			<div class="image">
+				<img src="wp-content/uploads/2025/09/489157022_676143901638016_137140652875044740_n.jpg" alt="image">
+				<div class="text">
+					<h3>Men Engagement for Gender Equality and Women Empowerment</h3>
+					<h2 class="mb">Men's March</h2>
+					<a href="about-us/" class="btn-two">Learn More</a>
+				</div>
+			</div>
+		</div>
+				<div class="swiper-slide">
+			<div class="image">
+				<img src="https://yuwalaya.org.np/wp-content/uploads/2025/09/COVER-PAGE-PICTURE.jpg" alt="image">
+				<div class="text">
+					<h3>Break the Silence, End the Violence</h3>
+					<h2 class="mb">16 days of activism</h2>
+					<a href="about-us/" class="btn-two">Learn More</a>
+				</div>
+			</div>
+		</div>
+				<div class="swiper-slide">
+			<div class="image">
+				<img src="wp-content/uploads/2025/09/20240502_092002-1-scaled.jpg" alt="image">
+				<div class="text">
+					<h3>Every Child Matters. Every Voices Counts</h3>
+					<h2 class="mb">Travel exhibition</h2>
+					<a href="about-us/" class="btn-two">Learn More</a>
+				</div>
+			</div>
+		</div>
+				<div class="swiper-slide">
+			<div class="image">
+				<img src="wp-content/uploads/2025/09/WhatsApp-Image-2025-09-11-at-14.46.55_93547bc2-1.jpg" alt="image">
+				<div class="text">
+					<h3>Our planet, Our shared responsibility</h3>
+					<h2 class="mb">Climate Justice Theme, Youth Learning Lab</h2>
+					<a href="about-us/" class="btn-two">Learn More</a>
+				</div>
+			</div>
+		</div>
+				<div class="swiper-slide">
+			<div class="image">
+				<img src="https://yuwalaya.org.np/" alt="image">
+				<div class="text">
+					<h3></h3>
+					<h2 class="mb"></h2>
+					<a href="about-us/" class="btn-two">Learn More</a>
+				</div>
+			</div>
+		</div>
+			</div>
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+</section>
+<!-- =====section company intro starts===== -->
+<section class="company-intro">
+	<div class="maincontainer">
+		<div class="row g-0">
+						<div class="col-md-4 intro-col">
+				<div class="intro-inner">
+					<img src="wp-content/uploads/2025/02/question.png" alt="image">
+					<h4>Who We Are</h4>
+					<p>Yuwalaya is a purely youth-led, non-profit, non-government organization working for and with adolescents & youths of Nepal in order to help them enjoy their life to their fullest potential. The organization was formed by the child club graduates to guide child club graduates and youths and rekindle their interest in new and emerging issues of the youths and work as a bridge between child club members and youths to minimize the disputes between child club graduates, youths, and I/NGOs. </p>
+					<a href="about-us/">Read More</a>
+				</div>
+			</div>
+						<div class="col-md-4 intro-col">
+				<div class="intro-inner">
+					<img src="wp-content/uploads/2025/02/charity.png" alt="image">
+					<h4>Whome We Help</h4>
+					<p>At Yuwalaya, we focus on supporting adolescents and youth across Nepal, especially those who are marginalized, underserved, or facing systemic barriers. We work with young people from diverse backgrounds—including girls and young women, LGBTQIA+ individuals, youth with disabilities, and those affected by poverty or social exclusion. By providing safe spaces, resources, and opportunities for growth, we empower them to speak up, lead, and drive change in their communities. Our programs are designed to be inclusive and youth-centered, ensuring that every young person has the tools and support they need to thrive.</p>
+					<a href="about-us/">Read More</a>
+				</div>
+			</div>
+						<div class="col-md-4 intro-col">
+				<div class="intro-inner">
+					<img src="wp-content/uploads/2025/02/globe.png" alt="image">
+					<h4>What We Do</h4>
+					<p>Yuwalaya is dedicated to empowering adolescents and youths, encouraging them to realize their fullest potential by participating in youth and adolescent movements, promoting leadership, and addressing emerging issues that impact their lives. Through its initiatives, Yuwalaya ensures that young voices are heard and included in decision-making processes across Nepal.</p>
+					<a href="about-us/">Read More</a>
+				</div>
+			</div>
+					</div>
+	</div>
+</section>
+<!-- =====section company intro ends===== -->
+<!-- =====section about us starts====== -->
+<section class="about-us sp-tb">
+	<div class="maincontainer">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="abt-img">
+										<img src="wp-content/uploads/2025/05/our-storyheader-photo-0-768x432-1.jpg" class="main-img" alt="image">
+															<img src="https://yuwalaya.org.np/wp-content/uploads/2025/04/abut-us-01-1024x512-1.jpg" class="float-img" alt="image">
+									</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="abt-desc">
+					<div class="section-heading mb">
+						<span>About Us</span>
+						<h2>For Youth, By Youth, With Youth</h2>
+					</div>
+					<h5>Yuwalaya is a purely youth led, non-profit, non-government organization working for and with adolescents of Nepal.</h5>
+					<p>Yuwalaya has built a platform for adolescents, youths and child club graduates, collaborating with them to achieve goal and objectives of Yuwalaya. We bridge organizations working on children rights and youth rights. We provide a safe platform for child club graduates and young people to grow and contribute to solving new and emerging issues of young people in the society. We value ideas, dreams and passion of the NEW generation. Yuwalaya is registered at District Administration Office, Lalitpur Metropolitan City (Registration No 3799/070) and affiliated with Social Welfare Council (Registration No 37674).
+</p>
+					<a href="about-us/" class="btn-one">Read More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =====section about us ends====== -->
+<!-- ======section focus area starts===== -->
+<section class="focus-area sp-b">
+	<div class="maincontainer">
+				<div class="section-heading text-center">
+			<span>Our Work</span>
+			<h2>Thematic Areas</h2>
+		</div>
+		<div class="row">
+						<div class="col-lg-4 col-sm-6 d-flex mt">
+				<div class="card1 w-100">
+					<div class="icon">
+						<img src="wp-content/uploads/2025/02/inclusivity.png" alt="image">
+					</div>
+					<h4>Youth Participation Empowerment and Governance</h4>
+					<p></p>
+				</div>
+			</div>
+						<div class="col-lg-4 col-sm-6 d-flex mt">
+				<div class="card1 w-100">
+					<div class="icon">
+						<img src="wp-content/uploads/2025/02/inclusivity.png" alt="image">
+					</div>
+					<h4>Gender Equality, Diversity and Social Inclusion</h4>
+					<p></p>
+				</div>
+			</div>
+						<div class="col-lg-4 col-sm-6 d-flex mt">
+				<div class="card1 w-100">
+					<div class="icon">
+						<img src="wp-content/uploads/2025/02/disaster-management.png" alt="image">
+					</div>
+					<h4>Emergency Affairs, Disaster Risk Reduction and Climate Justice</h4>
+					<p></p>
+				</div>
+			</div>
+						<div class="col-lg-4 col-sm-6 d-flex mt">
+				<div class="card1 w-100">
+					<div class="icon">
+						<img src="wp-content/uploads/2025/02/healthcare.png" alt="image">
+					</div>
+					<h4>Sexual and Reproductive Health and Rights</h4>
+					<p></p>
+				</div>
+			</div>
+						<div class="col-lg-4 col-sm-6 d-flex mt">
+				<div class="card1 w-100">
+					<div class="icon">
+						<img src="wp-content/uploads/2025/02/youth.png" alt="image">
+					</div>
+					<h4>Decent work, self-reliance and enterprise ecosystem</h4>
+					<p></p>
+				</div>
+			</div>
+					</div>
+	</div>
+</section>
+<!-- ======section focus area ends===== -->
+<!-- =====section info banner starts===== -->
+<section class="swiper heroslider">
+	<div class="swiper-wrapper">
+			<div class="swiper-slide info-banner sp-tb" style="background-image: url('https://yuwalaya.org.np/wp-content/uploads/2025/10/Screenshot-2025-10-07-141453.png')">
+			<div class="maincontainer">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="banner-txt">
+							<h1>Podcast on Youths and Music</h1>
+							<p>
+								🎙️ YuwaSanskriti: Kala, Aawaz, ra Pariwartan
+A youth-led podcast series by Yuwalaya that amplifies the voices of young changemakers using indigenous art, music, and storytelling as tools for justice, identity, and transformation. This series celebrates youth creativity rooted in culture and aims to preserve, promote, and pass on indigenous heritage while inspiring meaningful social change.
+Join us on this powerful journey of expression, resistance, and hope — led by youth, for youth, and with youth. 🌿🎶🖌️							</p>
+							<a href="about-us/" class="btn-two">Learn More</a>
+						</div>
+					</div>
+					<div class="col-lg-5 offset-lg-1">
+						<div class="play-video">
+							<a href="https://youtu.be/xojjs3pehis?si=hyywBTgGA3MfjmER">
+								<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/Screenshot-2025-10-07-141453.png" alt="image">
+								<div class="icon"><i class="fa-solid fa-play"></i></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class="swiper-slide info-banner sp-tb" style="background-image: url('https://yuwalaya.org.np/wp-content/uploads/2025/10/Screenshot-2025-10-14-132755.png')">
+			<div class="maincontainer">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="banner-txt">
+							<h1>Youths in Politics</h1>
+							<p>
+								नयाँ सोच र उद्देश्यका साथ मूलधारको राजनीतिमा युवा आउनुपर्छ - मा. निशा डांगी प्रतिनिधिसभा सदस्य
+Young people must enter mainstream politics with fresh ideas and goals.
+Hon. Nisha Dangi Member of the House of Representatives							</p>
+							<a href="about-us/" class="btn-two">Learn More</a>
+						</div>
+					</div>
+					<div class="col-lg-5 offset-lg-1">
+						<div class="play-video">
+							<a href="https://youtu.be/I9NXnRRpWYA?si=RIz1Hrri46IjWH_P">
+								<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/Screenshot-2025-10-14-132755.png" alt="image">
+								<div class="icon"><i class="fa-solid fa-play"></i></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				</div>
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+</section>
+<!-- =====section info banner ends===== -->
+<!-- =====section projects starts===== -->
+<section class="projects sp-tb">
+	<div class="maincontainer">
+				<div class="section-heading text-center mb">
+			<span>Our Focus Areas</span>
+			<h2>Our Featured Projects</h2>
+		</div>
+		<div class="swiper projectslider">
+			<div class="swiper-wrapper">
+								<div class="swiper-slide">
+					<div class="card2">
+						<a href="project/youth-hub/">
+							<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/486347165_8826561200777280_2003420593690590666_n.jpg" alt="image">
+							<div class="text">
+								<h4>Youth-hub</h4>
+								<p>Youth Hub is coalition platform convened by Plan Internal Nepal and hosted by YUWA representing six organization with a common goal of meaning involvement of youth to strive towards gender&hellip;</p>
+							</div>
+						</a>
+					</div>
+				</div>
+								<div class="swiper-slide">
+					<div class="card2">
+						<a href="project/breaking-the-taboos-mhm-and-cse-for-all/">
+							<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/mhm-2.jpg" alt="image">
+							<div class="text">
+								<h4>Breaking the Taboos: MHM and CSE for All</h4>
+								<p>YUWALAYA, in collaboration with the National Youth Council, DKA Austria, and Konjosing Rural Municipality, organized a two-day Training of Trainers (TOT) on Menstrual Hygiene Management (MHM) and Comprehensive Sexuality Education&hellip;</p>
+							</div>
+						</a>
+					</div>
+				</div>
+								<div class="swiper-slide">
+					<div class="card2">
+						<a href="project/empowering-women-through-digital-storytelling/">
+							<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/445507707_464261369492938_2162753865709706628_n.jpg" alt="image">
+							<div class="text">
+								<h4>Empowering Women Through Digital Storytelling</h4>
+								<p>The project, “Empowering Women Through Digital Storytelling” with Oxfam International Asia Regional Platform is focused on recognition of unpaid care work. The project aims to create opportunities for young boys&hellip;</p>
+							</div>
+						</a>
+					</div>
+				</div>
+								<div class="swiper-slide">
+					<div class="card2">
+						<a href="project/youth-led-gesi-initiative-for-covid-recovery-strategies-and-actions-in-nepal/">
+							<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/481696505_650203094232097_8854673427641925349_n.jpg" alt="image">
+							<div class="text">
+								<h4>Youth-led GESI Initiative for COVID Recovery Strategies and Actions in Nepal</h4>
+								<p>Youth-led initiatives for COVID Recovery Strategies and Action in Nepal implemented in partnership with Oxfam in Nepal and European Union aims to promote active youth participation in fostering gender equality&hellip;</p>
+							</div>
+						</a>
+					</div>
+				</div>
+								<div class="swiper-slide">
+					<div class="card2">
+						<a href="project/grassroots-action-to-end-child-early-and-forced-marriage-cefm/">
+							<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/WhatsApp-Image-2025-09-15-at-11.17.31_addb26a2.jpg" alt="image">
+							<div class="text">
+								<h4>Grassroots Action to End Child, Early and Forced Marriage (CEFM)</h4>
+								<p>Yuwalaya as the Secretariat for Girls Not Brides Nepal is leading the project entitled “Grassroots Action to End Child, Early, and Forced Marriage (CEFM)” under USAID/Save the Children/CWIN started on&hellip;</p>
+							</div>
+						</a>
+					</div>
+				</div>
+								<div class="swiper-slide">
+					<div class="card2">
+						<a href="project/increased-awareness-regarding-the-adverse-impacts-of-child-marriage-and-meaningful-progress-towards-achieveing-the-goal-of-a-child-marriage-free-nepal/">
+							<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/WhatsApp-Image-2025-09-15-at-11.28.55_78edd5aa.jpg" alt="image">
+							<div class="text">
+								<h4>Increased Awareness regarding the adverse impacts of child marriage and meaningful progress towards achieveing the goal of a child marriage free Nepal</h4>
+								<p>Yuwalaya as a Secretariat for Girls Not Brides Nepal is leading the project “Increased awareness regarding the adverse impacts of child marriage and meaningful progress towards achieving the goal of&hellip;</p>
+							</div>
+						</a>
+					</div>
+				</div>
+								<div class="swiper-slide">
+					<div class="card2">
+						<a href="project/rooting-for-children/">
+							<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/WhatsApp-Image-2025-09-12-at-14.49.40_95aa9f7e.jpg" alt="image">
+							<div class="text">
+								<h4>Rooting for Children</h4>
+								<p>“Rooting for Children” is a project that is being implemented in partnership with Katholische Jungschar (Austria) which aims to empowers children and adolescents to participate in local-level initiatives aimed at&hellip;</p>
+							</div>
+						</a>
+					</div>
+				</div>
+								<div class="swiper-slide">
+					<div class="card2">
+						<a href="project/strategic-direction-and-digital-yuwalaya/">
+							<img src="wp-content/uploads/2025/09/WhatsApp-Image-2025-09-11-at-14.46.55_93547bc2-1.jpg" alt="image">
+							<div class="text">
+								<h4>Strategic Direction and Digital Yuwalaya</h4>
+								<p>The project, “Strategic Direction and Digital Yuwalaya” under the Partners Investment Fund with Oxfam in Nepal is designed to strengthen Yuwalaya’s capacity as an organization and ensure its sustainability. Considering&hellip;</p>
+							</div>
+						</a>
+					</div>
+				</div>
+								<div class="swiper-slide">
+					<div class="card2">
+						<a href="project/yuwa-sangako-hamro-sahayatra/">
+							<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/485147192_661853783067028_7800435126168057732_n.jpg" alt="image">
+							<div class="text">
+								<h4>Yuwa Sangako Hamro Sahayatra</h4>
+								<p>Yuwa Sangha Hamro Sahayatra (Your Good Walk with Oxfam) is one of strategic intervention and innovative project of Oxfam in Nepal and Oxfam Korea to empower youths in Nepal through&hellip;</p>
+							</div>
+						</a>
+					</div>
+				</div>
+								<div class="swiper-slide">
+					<div class="card2">
+						<a href="project/strengthening-meaningful-youth-engagement-for-girls-standing-strong/">
+							<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/485304502_662634996322240_4226292170690361123_n.jpg" alt="image">
+							<div class="text">
+								<h4>Strengthening Meaningful Youth Engagement for Girls Standing Strong</h4>
+								<p>The project “Strengthening Meaningful Youth Engagement for Girls Standing Strong” with Plan International Nepal as a strategic partner aims to enhance meaningful youth participation in planning and decision-making arenas to&hellip;</p>
+							</div>
+						</a>
+					</div>
+				</div>
+							</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</div>
+</section>
+<!-- =====section projects ends===== -->
+<!-- =====section info banner2 starts===== -->
+<section class="info-banner2 sp-tb">
+	<div class="maincontainer">
+		<div class="row">
+			<div class="col-lg-8 info-left">
+				<div class="row">
+										<div class="col-md-5 col-sm-6 left-col">
+						<a href="/">
+							<div class="card3">
+								<img src="https://yuwalaya.org.np/" alt="image">
+								<div class="text">
+									<h4></h4>
+									<p></p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-7 col-sm-6 right-col">
+												<div class="card3 sm">
+							<a href="/">
+								<img src="https://yuwalaya.org.np/" alt="image">
+								<div class="text">
+									<h4></h4>
+									<p></p>
+								</div>
+							</a>
+						</div>
+												<div class="card3 sm">
+							<a href="/">
+								<img src="https://yuwalaya.org.np/" alt="image">
+								<div class="text">
+									<h4></h4>
+									<p></p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+								<div class="section-heading mb">
+					<span></span>
+					<h2></h2>
+				</div>
+				<div class="text2">
+					<h5></h5>
+					<p></p>
+					<a href="donate-now/" class="btn-two">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =====section info banner2 starts===== -->
+<!-- ======section news and events starts===== -->
+<section class="sp-tb">
+	<div class="maincontainer">
+		<div class="row">
+			<div class="col-lg-5 news-col">
+				<div class="section-heading text-center">
+					<span>Where Every Story Matters.</span>
+					<h2>Recent News & Blog</h2>
+				</div>
+				<div class="row">
+										<div class="col-lg-12 col-sm-6 mt">
+						<div class="news-card">
+							<a href="612-2/">
+								<div class="image">
+									<img src="https://yuwalaya.org.np/wp-content/uploads/2025/07/download.jpg" alt="image">
+								</div>
+								<div class="text">
+									<div class="publish">
+										<i class="fa-solid fa-calendar-days"></i> <span>November 6, 2025</span>
+									</div>
+									<h5>Request for Sealed Proposal for Expert in Institutional and Policy Development</h5>
+								</div>
+							</a>
+						</div>
+					</div>
+										<div class="col-lg-12 col-sm-6 mt">
+						<div class="news-card">
+							<a href="terms-of-reference-for-community-forest-expert/">
+								<div class="image">
+									<img src="https://yuwalaya.org.np/wp-content/uploads/2025/07/download.jpg" alt="image">
+								</div>
+								<div class="text">
+									<div class="publish">
+										<i class="fa-solid fa-calendar-days"></i> <span>November 6, 2025</span>
+									</div>
+									<h5>Request for Sealed Proposal for Community Forest Expert</h5>
+								</div>
+							</a>
+						</div>
+					</div>
+										<div class="col-lg-12 col-sm-6 mt">
+						<div class="news-card">
+							<a href="request-for-quotation/">
+								<div class="image">
+									<img src="wp-content/uploads/2025/02/logo.jpg" alt="image">
+								</div>
+								<div class="text">
+									<div class="publish">
+										<i class="fa-solid fa-calendar-days"></i> <span>September 18, 2025</span>
+									</div>
+									<h5>Request for Quotation</h5>
+								</div>
+							</a>
+						</div>
+					</div>
+									</div>
+			</div>
+			<div class="col-lg-7 event-col">
+				<div class="section-heading text-center mb">
+					<span>Our Events</span>
+					<h2>Upcoming Events</h2>
+				</div>
+				<div class="row">
+										<div class="col-md-6 mb">
+						<div class="event-card">
+							<a href="events/youth-musical-show/">
+								<div class="image">
+									<img src="wp-content/uploads/2025/09/YMS3.jpg" alt="image">
+								</div>
+								<div class="text">
+									<h5>Youth Musical Show</h5>
+									<ul>
+																													</ul>
+								</div>
+							</a>
+						</div>
+					</div>
+										<div class="col-md-6 mb">
+						<div class="event-card">
+							<a href="events/ignite-youth-leadership-bootcamp/">
+								<div class="image">
+									<img src="wp-content/uploads/2025/02/s2.jpg" alt="image">
+								</div>
+								<div class="text">
+									<h5>Ignite: Youth Leadership Bootcamp</h5>
+									<ul>
+																				<li class="publish">
+											<i class="fa-solid fa-calendar-days"></i> <span>April 25, 2025</span>
+										</li>
+																														<li class="publish">
+											<i class="fa-solid fa-location-dot"></i> <span>Lalitpur Metropolitan City-1, Nepal</span>
+										</li>
+																			</ul>
+								</div>
+							</a>
+						</div>
+					</div>
+									</div>
+				<a href="events/" class="btn-two active">View More</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ======section news and events ends===== -->
+<!-- =====section association starts===== -->
+<section class="association sp-b">
+	<div class="maincontainer">
+		<div class="section-heading text-center mb">
+			<span>Our Partners</span>
+			<h2>We are Associated With</h2>
+		</div>
+		<div class="swiper partnerslider">
+			<div class="swiper-wrapper">
+								<div class="swiper-slide">
+					<a href="https://ipaworld.org/">
+						<img src="wp-content/uploads/2025/03/ipa.png" alt="image">
+					</a>
+				</div>
+								<div class="swiper-slide">
+					<a href="https://plan-international.org/nepal/">
+						<img src="wp-content/uploads/2025/03/plan.png" alt="image">
+					</a>
+				</div>
+								<div class="swiper-slide">
+					<a href="https://www.dka.at/en">
+						<img src="wp-content/uploads/2025/03/dre.png" alt="image">
+					</a>
+				</div>
+								<div class="swiper-slide">
+					<a href="https://autismnepal.org/">
+						<img src="wp-content/uploads/2025/03/autism.png" alt="image">
+					</a>
+				</div>
+								<div class="swiper-slide">
+					<a href="https://www.unicef.org/nepal/">
+						<img src="wp-content/uploads/2025/03/unicef.png" alt="image">
+					</a>
+				</div>
+								<div class="swiper-slide">
+					<a href="https://rhrnnepal.org/">
+						<img src="wp-content/uploads/2025/03/right.png" alt="image">
+					</a>
+				</div>
+								<div class="swiper-slide">
+					<a href="https://nepal.oxfam.org/">
+						<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/OXFAM.png" alt="image">
+					</a>
+				</div>
+								<div class="swiper-slide">
+					<a href="https://www.girlsnotbrides.org/">
+						<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/GNB_Logo-2_V_Tag_EN_Colour_rgb_white.png" alt="image">
+					</a>
+				</div>
+								<div class="swiper-slide">
+					<a href="https://nyc.gov.np/">
+						<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/images.png" alt="image">
+					</a>
+				</div>
+								<div class="swiper-slide">
+					<a href="https://en.imsweden.org/">
+						<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/images-1.png" alt="image">
+					</a>
+				</div>
+								<div class="swiper-slide">
+					<a href="https://ygfamily.com/en/main">
+						<img src="https://yuwalaya.org.np/wp-content/uploads/2025/10/images-1-1.png" alt="image">
+					</a>
+				</div>
+							</div>
+			<div class="swiper-pagination association-pagination mt"></div>
+		</div>
+	</div>
+</section>
+<footer id="colophon" class="site-footer">
+    <div class="maincontainer">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 mb">
+                <div class="ft-logo">
+                    <a href="/">
+                        <img src="wp-content/uploads/2025/02/logo.png" alt="image">
+                    </a>
+                </div>
+                <div class="ft-desc">
+                    <p>Yuwalaya is a purely youth led, non-profit, non-government organization working for and with adolescents and youth of Nepal.</p>
+                                        <a href="about-us/">Read More</a>
+                                    </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb">
+                <h5 class="ft-title">Quick Links</h5>
+                <div class="links">
+                <div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-93 current_page_item menu-item-267"><a href="/" aria-current="page">Homepage</a></li>
+<li id="menu-item-269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="our-work/">Our Work</a></li>
+<li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="projects/">Projects</a></li>
+<li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="resources/">Resources</a></li>
+<li id="menu-item-272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-272"><a href="donate-now/">Donate Now</a></li>
+<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="contact-us/">Contact Us</a></li>
+</ul></div>                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb">
+                <h5 class="ft-title">Contact Us</h5>
+                <ul class="contact-links">
+                                       <li>
+                        <i class="fa-solid fa-tty"></i>
+                                                    <a href="tel:+977-01-5902108">+977-01-5902108                            </a>
+                                            </li>
+                                                                                <li>
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                                                <a href="mailto:info@yuwalaya.org.np">info@yuwalaya.org.np</a>
+                                                <a href="mailto:yuwalaya.youth@gmail.com">yuwalaya.youth@gmail.com</a>
+                                            </li>
+                                                            <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">Lalitpur Metropolitan City-1, Nepal</a>
+                    </li>
+                </ul>
+                <div class="social-media mt">
+                    <span>Get In Touch</span>
+                    <ul>
+                                               <li>
+                            <a href="https://www.facebook.com/Yuwalaya.youth/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                                                <li>
+                            <a href="https://www.instagram.com/yuwalaya/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                                                <li>
+                            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fyuwalaya" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                                                <li>
+                            <a href="https://www.youtube.com/channel/UCQFDMWm-xnGfQaUvL0iyfFQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb">
+                <div class="facebook">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FYuwalaya.youth%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <p>© 2025 Yuwalaya. All Rights Reserved. Designed and Developed by <a href="https://icebergtechnepal.com/" target="_blank">Iceberg Technology</a></p>
+        </div>
+         <a href="#" id="scroll-top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/organization\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!-- Click to Chat - https://holithemes.com/plugins/click-to-chat/  v4.22 -->  
+            <div class="ht-ctc ht-ctc-chat ctc-analytics ctc_wp_desktop style-7_1  " id="ht-ctc-chat" style="display: none;  position: fixed; bottom: 15px; right: 10px;">
+                                <div class="ht_ctc_style ht_ctc_chat_style">
+                <style id="ht-ctc-s7_1">
+.ht-ctc .ctc_s_7_1:hover .ctc_s_7_icon_padding, .ht-ctc .ctc_s_7_1:hover{background-color:#00d34d !important;border-radius: 25px;}.ht-ctc .ctc_s_7_1:hover .ctc_s_7_1_cta{color:#f4f4f4 !important;}.ht-ctc .ctc_s_7_1:hover svg g path{fill:#f4f4f4 !important;}</style>
+<div class="ctc_s_7_1 ctc-analytics ctc_nb" style="display:flex;justify-content:center;align-items:center; background-color: #25D366; border-radius:25px;" data-nb_top="-7.8px" data-nb_right="-7.8px">
+    <p class="ctc_s_7_1_cta ctc-analytics ctc_cta ht-ctc-cta  ht-ctc-cta-hover ctc_cta_stick " style=" display: none; order: 0; color: #ffffff; padding: 0px 0px 0px 21px;  margin:0 10px; border-radius: 25px; ">WhatsApp us</p>
+    <div class="ctc_s_7_icon_padding ctc-analytics " style="padding: 12px;background-color: #25D366;border-radius: 25px; ">
+        <svg style="pointer-events:none; display:block; height:20px; width:20px;" height="20px" version="1.1" viewbox="0 0 509 512" width="20px">
+        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+            <path style="fill: #ffffff;" d="M259.253137,0.00180389396 C121.502859,0.00180389396 9.83730687,111.662896 9.83730687,249.413175 C9.83730687,296.530232 22.9142299,340.597122 45.6254897,378.191325 L0.613226597,512.001804 L138.700183,467.787757 C174.430395,487.549184 215.522926,498.811168 259.253137,498.811168 C396.994498,498.811168 508.660049,387.154535 508.660049,249.415405 C508.662279,111.662896 396.996727,0.00180389396 259.253137,0.00180389396 L259.253137,0.00180389396 Z M259.253137,459.089875 C216.65782,459.089875 176.998957,446.313956 143.886359,424.41206 L63.3044195,450.21808 L89.4939401,372.345171 C64.3924908,337.776609 49.5608297,295.299463 49.5608297,249.406486 C49.5608297,133.783298 143.627719,39.7186378 259.253137,39.7186378 C374.871867,39.7186378 468.940986,133.783298 468.940986,249.406486 C468.940986,365.025215 374.874096,459.089875 259.253137,459.089875 Z M200.755924,146.247066 C196.715791,136.510165 193.62103,136.180176 187.380228,135.883632 C185.239759,135.781068 182.918689,135.682963 180.379113,135.682963 C172.338979,135.682963 164.002301,138.050856 158.97889,143.19021 C152.865178,149.44439 137.578667,164.09322 137.578667,194.171258 C137.578667,224.253755 159.487251,253.321759 162.539648,257.402027 C165.600963,261.477835 205.268745,324.111057 266.985579,349.682963 C315.157262,369.636141 329.460495,367.859106 340.450462,365.455539 C356.441543,361.9639 376.521811,350.186865 381.616571,335.917077 C386.711331,321.63837 386.711331,309.399797 385.184018,306.857991 C383.654475,304.305037 379.578667,302.782183 373.464955,299.716408 C367.351242,296.659552 337.288812,281.870254 331.68569,279.83458 C326.080339,277.796676 320.898622,278.418749 316.5887,284.378615 C310.639982,292.612729 304.918689,301.074268 300.180674,306.09099 C296.46161,310.02856 290.477218,310.577055 285.331175,308.389764 C278.564174,305.506821 259.516237,298.869139 236.160607,278.048627 C217.988923,261.847958 205.716906,241.83458 202.149458,235.711949 C198.582011,229.598236 201.835077,225.948292 204.584241,222.621648 C207.719135,218.824546 210.610997,216.097679 213.667853,212.532462 C216.724709,208.960555 218.432625,207.05866 220.470529,202.973933 C222.508433,198.898125 221.137195,194.690767 219.607652,191.629452 C218.07588,188.568136 205.835077,158.494558 200.755924,146.247066 Z" fill="#ffffff" id="htwaicon-chat"/>
+        </g>
+        </svg>    </div>
+</div>                </div>
+            </div>
+                        <span class="ht_ctc_chat_data" data-no_number="<p style='background-color:#ffffff; margin:0; border:1px solid #fbfbfb; padding:7px; border-radius:4px; box-shadow:5px 10px 8px #888888;'>No WhatsApp Number Found!</p>" data-settings="{&quot;number&quot;:&quot;&quot;,&quot;pre_filled&quot;:&quot;&quot;,&quot;dis_m&quot;:&quot;show&quot;,&quot;dis_d&quot;:&quot;show&quot;,&quot;css&quot;:&quot;display: none; cursor: pointer; z-index: 99999999;&quot;,&quot;pos_d&quot;:&quot;position: fixed; bottom: 15px; right: 10px;&quot;,&quot;pos_m&quot;:&quot;position: fixed; bottom: 15px; right: 10px;&quot;,&quot;schedule&quot;:&quot;no&quot;,&quot;se&quot;:150,&quot;ani&quot;:&quot;no-animation&quot;,&quot;url_structure_d&quot;:&quot;web&quot;,&quot;url_target_d&quot;:&quot;_blank&quot;,&quot;ga&quot;:&quot;yes&quot;,&quot;fb&quot;:&quot;yes&quot;,&quot;g_init&quot;:&quot;default&quot;,&quot;g_an_event_name&quot;:&quot;click to chat&quot;,&quot;pixel_event_name&quot;:&quot;Click to Chat by HoliThemes&quot;}"></span>
+            <script id="ht_ctc_app_js-js-extra">
+var ht_ctc_chat_var = {"number":"","pre_filled":"","dis_m":"show","dis_d":"show","css":"display: none; cursor: pointer; z-index: 99999999;","pos_d":"position: fixed; bottom: 15px; right: 10px;","pos_m":"position: fixed; bottom: 15px; right: 10px;","schedule":"no","se":"150","ani":"no-animation","url_structure_d":"web","url_target_d":"_blank","ga":"yes","fb":"yes","g_init":"default","g_an_event_name":"click to chat","pixel_event_name":"Click to Chat by HoliThemes"};
+var ht_ctc_variables = {"g_an_event_name":"click to chat","pixel_event_type":"trackCustom","pixel_event_name":"Click to Chat by HoliThemes","g_an_params":["g_an_param_1","g_an_param_2","g_an_param_3"],"g_an_param_1":{"key":"number","value":"{number}"},"g_an_param_2":{"key":"title","value":"{title}"},"g_an_param_3":{"key":"url","value":"{url}"},"pixel_params":["pixel_param_1","pixel_param_2","pixel_param_3","pixel_param_4"],"pixel_param_1":{"key":"Category","value":"Click to Chat for WhatsApp"},"pixel_param_2":{"key":"ID","value":"{number}"},"pixel_param_3":{"key":"Title","value":"{title}"},"pixel_param_4":{"key":"URL","value":"{url}"}};
+</script>
+<script src="wp-content/plugins/click-to-chat-for-whatsapp/new/inc/assets/js/app_ver-4.22.js" id="ht_ctc_app_js-js"></script>
+<script src="wp-includes/js/dist/hooks.min_ver-4d63a3d491d11ffd8ac6.js" id="wp-hooks-js"></script>
+<script src="wp-includes/js/dist/i18n.min_ver-5e580eb46a90c2b997e6.js" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="wp-content/plugins/contact-form-7/includes/swv/js/index_ver-6.0.6.js" id="swv-js"></script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/yuwalaya.org.np\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+</script>
+<script src="wp-content/plugins/contact-form-7/includes/js/index_ver-6.0.6.js" id="contact-form-7-js"></script>
+<script src="npm/-popperjs/core-2.11.8/dist/umd/popper.min_ver-1.0.0.js" id="organization-popper-js"></script>
+<script src="wp-content/themes/organization/resources/js/vendor/jquery.min_ver-1.0.0.js" id="organization-jquery-js-js"></script>
+<script src="wp-content/themes/organization/resources/js/vendor/bootstrap.min_ver-1.0.0.js" id="organization-bundle-js"></script>
+<script src="wp-content/themes/organization/resources/js/vendor/swiper-bundle.min_ver-1.0.0.js" id="organization-swiper-js-js"></script>
+<script src="wp-content/themes/organization/resources/lightbox/js/lightbox.min_ver-1.0.0.js" id="organization-lightbox-js-js"></script>
+<script src="ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min_ver-1.0.0.js" id="organization-lightgallery-js-js"></script>
+<script src="wp-content/themes/organization/resources/js/custom/main_ver-1.0.0.js" id="organization-main-js-js"></script>
+<script src="wp-content/themes/organization/js/navigation_ver-1.0.0.js" id="organization-navigation-js"></script>
+<script src="wp-includes/js/hoverIntent.min_ver-1.10.2.js" id="hoverIntent-js"></script>
+<script src="wp-content/plugins/megamenu/js/maxmegamenu_ver-3.5.js" id="megamenu-js"></script>
+<center><font size="2">This is a free demo result from the <a href="https://www.waybackmachinedownloader.com/en/">Wayback Machine</a> Downloader. It is not a complete website.</font></center></body>
+</html>
